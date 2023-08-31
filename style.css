@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/images/perrito.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.trivia_contenedor{
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.7); /* Color casi transparente */
+    border-radius: 10%; /* Forma ovalada */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efecto difuminado */
+    text-align: center;
+}
+.trivia-titulo{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+}
+.trivia-puntaje{
+    font-size: 1rem;
+    color: #FF5733; /* Color llamativo */
+    background-color: rgba(255, 87, 51, 0.1); /* Fondo semitransparente */
+    border-radius: 50%; /* Forma circular */
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto sombreado */
+}
+.trivia-preguntas{
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 2rem;   
+}
+.trivia-preguntas .category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--light-purple-color);
+    color: var(--light-color);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+.trivia-opciones li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;    
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%; /* Forma circular */
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto sombreado */
+    
+  }
+  
+  .trivia-opciones li:last-child {
+    border-bottom: none;
+  }
+  
+  .trivia-opciones li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .trivia-opciones li.selected {
+    color: #FF5733; /* Color llamativo */
+    background-color: rgba(255, 87, 51, 0.1); /* Fondo semitransparente */
+  }
+  
+  .trivia-opciones li:not(.selected):hover {
+    opacity: 0.7;
+    background-color: #f0f0f0;
+  }
+  
+  .trivia-opciones li.selected:hover {
+    opacity: 1;
+  }
+  
+  .trivia-opciones li.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .trivia-opciones li.disabled:hover {
+    opacity: 0.5;
+  }
+  
+  .trivia-opciones li {
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+  }
+  
+  .trivia-opciones li.selected {
+    color: #FF5733; /* Color llamativo */
+    background-color: rgba(255, 87, 51, 0.1); /* Fondo semitransparente */
+  }
+  
+  .trivia-opciones li:not(.selected):hover {
+    opacity: 0.7;
+    background-color: #f0f0f0;
+  }
+  
+  .trivia-opciones li.selected:hover {
+    opacity: 1;
+  }
+  
+  .trivia-opciones li {
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+  }
+  
+  .trivia-opciones li.selected {
+    color: #FF5733; /* Color llamativo */
+    background-color: rgba(255, 87, 51, 0.1); /* Fondo semitransparente */
+  }
+  
+  .trivia-opciones li:not(.selected):hover {
+    opacity: 0.7;
+    background-color: #f0f0f0;
+  }
+  
+  .trivia-opciones li.selected:hover {
+    opacity: 1;
+  }
+
+  .trivia-foot button{
+    border: none;
+    border-radius: 0.5rem;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 1rem;    
+    margin: 0 auto 0 auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    background-color: var(--grey-color);
+    color: var(--dark-color);
+    letter-spacing: 2px;
+    transition: var(--transition);
+    box-shadow: 0 4px 0 0 #bbbbbb;
+}
+.trivia-foot button:hover{
+    background-color: #FF5733;
+    box-shadow: 0 4px 0 0 #FF5733;
+}
+.trivia-foot button:active{
+    transform: scale(0.95);
+}
